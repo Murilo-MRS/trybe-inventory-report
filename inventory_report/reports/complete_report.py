@@ -13,7 +13,6 @@ class CompleteReport(SimpleReport):
 
         response += "\nProdutos estocados por empresa:\n"
         for company, quantity in most_productive_company.items():
-            print(company, quantity)
             response += "- {}: {}\n".format(company, quantity)
 
         return response
