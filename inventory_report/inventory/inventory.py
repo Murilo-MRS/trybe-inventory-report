@@ -61,6 +61,5 @@ class Inventory:
 
         loader = Inventory.get_loader(file_extension)(path)
         type_report = Inventory.get_report_type(report_type).generate(loader)
-        print(type_report)
 
         return type_report
